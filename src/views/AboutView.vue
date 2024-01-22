@@ -4,7 +4,7 @@ import ItemCard from '@/components/ItemCard.vue';
 const projects = [
   {
     title: 'Creator Dashboard',
-    image: 'public/pictures/creatorDashPreview.png',
+    image: '/creatorDashPreview.png',
     imageAlt: 'Creator Dashboard preview',
     description: 'Webapp using the Twitch API to display linked accounts followed channels and personal channel statistics',
     link: 'https://astounding-blancmange-fb88d6.netlify.app/',
@@ -12,7 +12,7 @@ const projects = [
   },
   {
     title: 'Lyric Finder',
-    image: 'public/pictures/lyricFinderPreview.png',
+    image: '/lyricFinderPreview.png',
     imageAlt: 'Lyric Finder preview showing the layout of the project',
     description: 'Searches a local csv file stored on the server using an inverted index and returns relavent songs based on the keyword entered',
     link: 'https://fragrant-lake-1876.fly.dev/',
@@ -20,7 +20,7 @@ const projects = [
   },
   {
     title: 'NoteMax',
-    image: 'public/pictures/noteMaxPreview.png',
+    image: '/noteMaxPreview.png',
     imageAlt: 'NoteMax preview showing the layout of the user dashboard',
     description: 'Fullstack application that allows users to upload PDF templates and rate other PDFs uploaded by users in the same category',
     link: 'https://tangerine-cranachan-78b81e.netlify.app/',
