@@ -17,8 +17,6 @@ const toggleOpen = () => {
     isOpen.value = appDataStore.showInfo;
 
 }
-
-
 </script>
 
 <template>
@@ -54,18 +52,20 @@ h3{
     color: #EAF6FF;
     border-radius: .5rem;
     padding: 1rem;
+    font-size: 1.5rem;
   
 }
 h3:hover{
     background: #284B63;
     
 }
+
 .content{
     margin: .25rem;
     padding: .25rem;
     min-height: 10rem;
     height: 100%;
-    width: 15rem;
+    width: 20rem;
     border-radius: .25rem;
     background: #EAF6FF;
     transform-origin: top

@@ -3,6 +3,11 @@ import HamburgerIcon from './HamburgerIcon.vue';
 
 import { RouterLink } from 'vue-router'
 import {useAppDataStore} from "@/stores/appData"
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+
+const components = {
+  FontAwesomeIcon,
+};
 
 const appDataStore = useAppDataStore();
 
@@ -14,19 +19,46 @@ const appDataStore = useAppDataStore();
         <transition name="slide">
           <nav v-if="appDataStore.showHeader">
             <RouterLink to="/">About</RouterLink>
-            <RouterLink to="/about">Projects</RouterLink>
+            <RouterLink to="/projects">Projects</RouterLink>
+            <div class="socials">
+              <a class="social-link" href="https://www.linkedin.com/in/jonathan-humphrey-97478223a/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a class="social-link" href="https://github.com/JonathanHumphrey" target="_blank">
+                <i class="fa-brands fa-square-github"></i>
+              </a>
+            </div>
           </nav>
         </transition>
     </div>
 </template>
 
 <style scoped>
+.socials{
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.social-link{
+  margin: 10px;
+}
+.social-link:hover{
+  background: none;
+  color: #284B63;
+  
+}
 .header-container{
   position: absolute;
   display: flex;
+  width: 10rem;
+  margin-right: 2rem;
   flex-direction: column;
-  left: -10rem;
-  top: 2rem;
+  left: -12rem;
+  top: 0rem;
+  line-height: 2rem;
+  
 }
 .slide-enter-active {
   animation: slide reverse 500ms ease-in-out;
@@ -59,10 +91,12 @@ nav {
   min-height: 10rem;
   font-size: 12px;
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 2rem;
   background-color: #D9D9D9;
   border-radius: .5rem;
   padding: .1rem;
+  box-shadow: 2px 3px 16px -4px rgba(0,0,0,0.75);
+
 }
 
 nav a.router-link-exact-active {
@@ -70,6 +104,8 @@ nav a.router-link-exact-active {
   padding: .5rem;
   width: 80%;
   color: #EAF6FF;
+  box-shadow: 2px 3px 8px -4px rgba(0,0,0,0.75);
+
 }
 nav a:hover{
   background-color: #284B63;

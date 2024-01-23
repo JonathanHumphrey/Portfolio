@@ -10,15 +10,40 @@ const aboutHeader = "About";
     <div class="about-section">
       <div class="left-section">
         <h2>Jonathan Humphrey</h2>
+        <h3>Frontend Developer</h3>
         <CollapseDiv :header="skillsHeader">
-          <ul>
-              <li>one</li>
-              <li>two</li>
-              <li>three</li>
-          </ul>
+          <div class="lists">
+            <h4>Technical</h4>
+            <ul>
+              <li>Vue</li>
+              <li>React</li>
+              <li>MongoDB</li>
+              <li>Flask</li>
+              <li>Cypress</li>
+            </ul>
+            <ul>
+              <li>Javascript</li>
+              <li>Python</li>
+              <li>C++</li>
+              <li>Java</li>
+            </ul>
+            <h4>General</h4>
+            <ul class="longer-text">
+              <li>Problem Solving</li>
+              <li>Collaboration</li>
+              <li>Critical Thinking</li>
+              <li>Detail Oriented</li>
+            </ul>
+          </div>
         </CollapseDiv>
         <CollapseDiv :header="aboutHeader">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacinia auctor eros. Cras ut massa a ex fermentum condimentum sit amet a urna. Sed turpis mi, condimentum non enim vitae, ullamcorper luctus nibh. Vivamus nisl nibh, pellentesque vel hendrerit id, molestie nec risus. Proin risus elit, fringilla quis massa ac, auctor tristique ex.</p>
+          <p>
+            I'm a Frontend Developer with a passion for problem solving and learning how things work.  
+            I am currently looking for opportunities to challenge myself to grow as a developer. 
+          </p>
+          <p>
+            
+          </p>
         </CollapseDiv>
       </div>
       <div class="right-section">
@@ -29,8 +54,20 @@ const aboutHeader = "About";
 </template>
 
 <style scoped>
+
+.lists{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+ul{
+  width: 30%;
+}
+.longer-text{
+  width: auto;
+}
 .about-section{
-  width: 80%;
+  width: 85%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -53,7 +90,8 @@ const aboutHeader = "About";
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: flex-end;
+  margin-right: .5rem;
   width: 100%;
   height: 100%;
 }
@@ -66,5 +104,19 @@ img{
 h2{
   color: #EAF6FF;
   margin: 1rem;
+  font-size: 2rem;
+}
+h3{
+  color: #EAF6FF;
+  margin-left: 2rem;
+  margin-top: -1rem;
+}
+h4{
+  width: 100%;
+  display: block;
+  margin-bottom: 0rem;
+}
+p{
+  text-indent: 2rem;
 }
 </style>

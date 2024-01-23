@@ -84,4 +84,18 @@ p{
   justify-content: space-between;
   align-items: center;
 }
+a {
+  background-color: #3C6E71;
+  padding: .5rem;
+  width: 4rem;
+  border-radius: .25rem;
+  color: #EAF6FF;
+  box-shadow: 2px 3px 8px -4px rgba(0,0,0,0.75);
+  text-align: center;
+  font-size: 1rem;
+}
+a:hover{
+  background-color: #284B63;
+  color: #EAF6FF;
+}
 </style>

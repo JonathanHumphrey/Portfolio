@@ -23,7 +23,7 @@ const toggleHeader = () => {
   cursor: pointer;
   position: relative;
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  
 }
 
 .menu-bar {
