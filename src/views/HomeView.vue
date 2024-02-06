@@ -72,13 +72,11 @@ ul{
   justify-content: space-between;
   align-items: flex-start;
   border-radius: .5rem;
-  height: auto;
+  height: 100%;
   min-height: 45rem;
   background-color: #3C6E71;
   margin: 1rem;
   box-shadow: 2px 3px 16px -4px rgba(0,0,0,0.75);
-
-
 }
 .left-section{
   display: flex;
@@ -105,6 +103,7 @@ h2{
   color: #EAF6FF;
   margin: 1rem;
   font-size: 2rem;
+  width: max-content;
 }
 h3{
   color: #EAF6FF;

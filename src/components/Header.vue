@@ -55,7 +55,7 @@ const appDataStore = useAppDataStore();
   width: 10rem;
   margin-right: 2rem;
   flex-direction: column;
-  left: -12rem;
+  left: -35rem;
   top: 0rem;
   line-height: 2rem;
   

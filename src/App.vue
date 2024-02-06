@@ -5,11 +5,13 @@ import Header from "./components/Header.vue"
 </script>
 
 <template>
-  <div class="header">
-    <Header />
-  </div>
+  <div class="parallax">
+    <div class="header">
+      <Header />
+    </div>
 
-  <RouterView />
+    <RouterView />
+  </div>
 </template>
 
 <style scoped>
